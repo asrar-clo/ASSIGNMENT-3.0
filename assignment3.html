@@ -6,12 +6,58 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        
-let mark = 50;
-let Num = Number(prompt(" Your marks is 50 and grade B ",50 ));
+  <h1>Grading  a student with a mark </h1>
+  <script>
+    let marks = prompt("Enter your to find a grade");
+    if(marks>=1 && marks<=100) {
+      
+      switch(true) {
+        case marks>=80:
+        console.log(" The Number that you have scored " + marks + " and the grade is  A ");
+        break;
+        case marks<80 && marks>=70:
+        console.log(" The Number that you have scored " + marks + " and the grade is  B ");
+        break;
+      case marks<70 && marks>=60:
+      console.log(" The Number that you have scored " + marks + " and the grade is C ");
+        break;
+        case marks<60 && marks>=50:
+        console.log(" The Number that you have scored " + marks + " and the grade is  D ");
+        break;
+        default:
+        console.log(" The Number that you have scored " + marks + " and the grade is  E");
+      }
 
-         </script>
+    }      
+        else {
+          console.log("Enter your Valid Marks");
+        }
+        if(marks>=80) {
+          console.log(" The Number that you have scored " + marks + " and the grade is  A ");
+         }
+         else if (marks<80 && marks>=70) {
+          console.log(" The Number that you have scored " + marks + " and the grade is  B ");
+         }
+         else if (marks<70 && marks>=60) {
+         console.log("  The Number that you have scored " + marks + " and the grade is  C ");
+         }
+         else if (marks<60 && marks>=50) {
+        console.log(" The Number that you have scored " + marks + " and the grade is  D ");
+      }
+       else {
+        console.log(" The Number that you have scored " + marks + " and the grade is  E ");
+       } 
+            let grade =(marks>=80)?"  The Number that you have scored " + marks + "  and the grade is A":
+               (marks<80 && marks>=70)?"  The Number that you have scored " + marks + "  and the grade is B " :
+                 (marks<70 && marks>=60)?"  The Number that you have scored " + marks + "  and the grade is C" :
+                    (marks<60 && marks>=50)?" The Number that you have scored " + marks + "  and the grade is D" :
+                        " The Number that you have scored " + marks + "  and the grade is  E";
+
+                              console.log(grade);
+
+
+
+               </script>
     
 </body>
 </html>
